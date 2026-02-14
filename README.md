@@ -1,22 +1,22 @@
-# ZUBAIR-25BCADATA0009-01-ASIGNMENT-C-PROGRAM-
 #include <iostream>
 using namespace std;
 
-int main() 
+int main()
 {
-    int number;
+    float principal, rate, time, simpleInterest;
 
-    cout << "Enter a number: ";
-    cin >> number;
+    cout << "Enter Principal amount: ";
+    cin >> principal;
 
-    if (number % 2 == 0)
-    {
-        cout << number << " is Even." << endl;
-    }
-    else
-    {
-        cout << number << " is Odd." << endl;
-    }
+    cout << "Enter Rate of interest: ";
+    cin >> rate;
+
+    cout << "Enter Time (in years): ";
+    cin >> time;
+
+    simpleInterest = (principal * rate * time) / 100;
+
+    cout << "Simple Interest = " << simpleInterest << endl;
 
     return 0;
 }
